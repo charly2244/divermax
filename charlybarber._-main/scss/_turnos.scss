@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    font-family: 'Nunito', sans-serif;
+    font-weight: bolder;
+    p{
+        font-family: $fuente-principal;
+        color: white;
+        text-align: center;
+        justify-content: center;
+        margin-top: 20px;
+
+    }
+    .container-boton{
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .boton{
+            display: flex;
+            flex-direction: column;
+            .btn{
+                text-decoration: none;
+                padding: 20px 50px;
+                font-size: 1.5rem;
+                position: relative;
+                margin: 5px;
+            }    
+            .btn-3{
+                color: white;
+                border-radius: 40px;    
+                box-shadow: 0 0 0 0 rgba(88, 88, 88, 0.5), 0 0 0 0 rgba(255, 255, 255, 0.5);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                overflow: hidden;
+                &::after{
+                    content: "";
+                    width: 400px;
+                    height: 400px;
+                    position: absolute;
+                    top: -50px;
+                    left: -100px;
+                    background: #13ff13;
+                    background-image: linear-gradient(to bottom, #000000, #222222, #3e3e3e, #5c5c5c, #7c7c7c, #929292, #a8a8a8, #bfbfbf, #cfcfcf, #dfdfdf, #efefef, #ffffff);
+                    z-index: -1;
+                    transition: transform 0.5s ease;
+                }
+                &:hover{
+                    transform: translate(0, -6px);
+                    box-shadow: 10px -10px 25px 0 rgba(49, 49, 49, 0.5), -10px 10px 25px 0 rgba(216, 216, 216, 0.794);
+                }
+                &:hover::after{
+                    transform: rotate(150deg);
+                }
+            }
+        }
+    }
+}
+
+
+
+/* INTENTO BOTON
+main{
+    .re-botones{
+        min-width: 100vh;
+        display: $flex;
+        justify-content: center;
+        align-items: center;
+        .boto{
+            display: $flex;
+            flex-direction: column;
+            &:hover::after{
+                transform: rotate(150deg);
+            }
+            .boton-1{
+                text-decoration: none;
+                padding: 20px 50px;
+                font-size: 1.5rem;
+                position: relative;
+                margin: 32px;
+                color: white;
+                border-radius: 40px;
+                box-shadow: 0px 0px 0px 0px rgba($color: 145,64,248, $alpha: 0.5), 0px 0px 0px 0px rgba($color: 39,200,255, $alpha: 0.5);
+                transition: transform 0.3s ease; box-shadow: 0.3 ease;
+                overflow: hidden;
+                &::after{
+                    content:"";
+                    width: 400px;
+                    height: 400px;
+                    position: absolute;
+                    top: -50px;
+                    left: -100px;
+                    background: rgb(106, 190, 57);
+                    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+                    z-index: -1;
+                    transition: transform 0.5s ease;
+                }
+                &:hover{
+                    transform: translate(0, -6px);
+                    box-shadow: 10px -10px 25px 0 rgba($color: 16,226,253, $alpha: 0.5), -10px 10px 25px 0 rgba($color: 183,0,255, $alpha: 0.7);
+                }
+            }
+        }
+    }
+}
+*/

@@ -1,0 +1,39 @@
+main{
+    .espaciado{
+        padding: 40px;
+        .carousel-inner{
+            height: 100vh;
+            width: 100%;
+            div{
+                .img-carousel{
+                    width: 100%;
+                    height: 100vh;
+                    object-fit: cover;
+                }
+                div{
+                    color: rgb(253, 252, 252);
+                    font-family: $fuente-principal;
+                    p{
+                        color: rgb(0, 0, 0);
+                        font-family: $fuente-principal;
+                        text-align: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+
+}
+@media screen and (max-width: 540px) {
+    main{
+        .espaciado{
+            padding: 10px;
+        }
+    }
+}
+@media screen and (max-width: 540px) {
+    p{
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,219 @@
+* {
+  font-family: "Times New Roman", Times, serif;
+  font-family: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: hsl(17deg, 100%, 50%);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h3 {
+  color: rgb(255, 255, 255);
+}
+
+.derechosreservados {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-top: 20px;
+}
+
+header img {
+  width: 1200px;
+}
+
+body {
+  background-color: beige;
+}
+
+.encabezado {
+  background-color: rgb(120, 167, 45);
+  color: white;
+}
+
+.encabezado nav a {
+  text-decoration: none;
+}
+
+p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tiposervicio1 {
+  background-color: aqua;
+  width: 25%;
+  height: 25%;
+  margin: 0 auto;
+}
+
+.tiposervicio2 {
+  background-color: aqua;
+  width: 25%;
+  height: 25%;
+  margin: 0 auto;
+}
+
+.tiposervicio3 {
+  background-color: aqua;
+  width: 25%;
+  height: 25%;
+  margin: 0 auto;
+}
+
+.piedepagina {
+  background-color: rgba(119, 119, 119, 0.3);
+  width: 100%;
+  color: rgb(2, 2, 2);
+  border-radius: 50px;
+  padding: 15px;
+}
+
+.lista_redes {
+  list-style-type: none;
+}
+
+.altura {
+  color: white;
+  height: 80vh;
+}
+
+.imagen {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 10px;
+}
+
+.imagen:hover {
+  transform: scale(1.2);
+}
+
+.card {
+  margin: 20px;
+  border-radius: 6px;
+  background-color: black;
+}
+
+.titulo-inicio {
+  font-family: "Roboto Slab", serif;
+  color: rgb(161, 161, 161);
+  text-align: center;
+  margin: 10px;
+}
+
+.fondocb {
+  background: url(../img/fondo\ negro.png);
+  font-family: white;
+  color: white;
+}
+
+.titulo {
+  font-family: "Comforter Brush", cursive;
+  font-size: xx-large;
+}
+
+.fondo-header {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.logos {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logos1 {
+  text-decoration: none;
+  color: white;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.logos1:hover {
+  text-decoration: none;
+  color: black;
+  transform: scale(2);
+}
+
+.foto-precio {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foto-precio figure {
+  position: relative;
+  height: 250px;
+  width: 350px;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.foto-precio figure img {
+  width: 100%;
+  height: 100%;
+  transition: all 500ms ease-out;
+  object-fit: cover;
+}
+
+.foto-precio figure .precio {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(119, 119, 119, 0.6);
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+
+.foto-precio figure:hover > .precio {
+  opacity: 1;
+  visibility: visible;
+}
+
+.foto-precio figure:hover > .precio p {
+  margin-top: 70px;
+  margin-bottom: 15px;
+}
+
+.foto-precio figure .precio p {
+  color: white;
+  font-weight: 400;
+  transition: all 500ms ease-out;
+  margin-top: 30px;
+}
+
+.foto-precio figure:hover > img {
+  transform: scale(1.3);
+}
+
+.pcorte {
+  font-family: "Roboto Slab", serif;
+  color: rgb(161, 161, 161);
+}
+
+header nav .fondo-header {
+  background: rgba(255, 255, 255, 0.5);
+}
+header nav div .titulo {
+  font-family: "Comforter Brush", cursive;
+  font-size: xx-large;
+}
+
+/*# sourceMappingURL=estilos.css.map */

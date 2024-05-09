@@ -1,0 +1,558 @@
+/* Variables:*/
+footer .piedepagina {
+  background-color: rgba(119, 119, 119, 0.3);
+  width: 100%;
+  color: rgb(2, 2, 2);
+  border-radius: 50px;
+  padding: 15px;
+}
+footer .piedepagina .logos {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .piedepagina .logos .logos1 {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin-right: 20px;
+  margin-left: 20px;
+}
+footer .piedepagina .logos .logos1:hover {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  transform: scale(2);
+}
+footer .piedepagina div .derechosreservados {
+  font-family: "Roboto Slab", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  margin-top: 20px;
+}
+
+/*main de index:*/
+main section div .titulo-inicio {
+  font-family: "Roboto Slab", serif;
+  color: rgb(161, 161, 161);
+  text-align: center;
+  margin: 10px;
+}
+
+main .foto-precio {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .foto-precio figure {
+  position: relative;
+  height: 250px;
+  width: 350px;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+main .foto-precio figure:hover > .precio {
+  opacity: 1;
+  visibility: visible;
+}
+main .foto-precio figure:hover > .img-servicios {
+  transform: scale(1.3);
+}
+main .foto-precio figure:hover > .precio p {
+  margin-top: 70px;
+  margin-bottom: 15px;
+}
+main .foto-precio figure .img-servicios {
+  width: 100%;
+  height: 100%;
+  transition: all 500ms ease-out;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .foto-precio figure .precio {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(119, 119, 119, 0.6);
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+main .foto-precio figure .precio .pcorte {
+  font-family: "Roboto Slab", serif;
+  color: rgb(255, 255, 255);
+}
+
+.fondocb {
+  background: url(../img/fondo\ negro.png);
+}
+
+header {
+  color: white;
+}
+header .fondo-header {
+  background-color: rgba(117, 134, 103, 0.329) !important;
+}
+header .fondo-header div .logo-cb {
+  height: 80px;
+  cursor: pointer;
+}
+header .fondo-header div div .posicion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 70px !important;
+  margin-right: 650px !important;
+}
+header .fondo-header div div .posicion li a {
+  padding: 5px;
+  font-family: "Roboto Slab", serif;
+  color: white !important;
+  font-size: 1.2rem;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  margin: 10px;
+}
+header .fondo-header div div .posicion li a:hover {
+  border: 1px solid gray;
+  transition: 0.5s;
+  background: gray;
+}
+
+/*
+.titulo{
+                font-family: $fuente-carta;
+                font-size: xx-large;
+                color: white;
+            }
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+nav{
+    background-color: rgb(5, 5, 5, 0.9);
+    height: 15vh;
+    width: 100%;
+    .enlace{
+        position: absolute;
+        padding: 20px 50px;
+    }
+    .logo{
+        height: 40px;
+    }
+    .links{
+        float: right;
+        margin-right: 20px;
+        .liclass{
+            display: inline-block;
+            padding-top: 20px;
+        }
+    }
+    .links li a{
+        color: white;
+        font-size: 18px;
+        text-decoration: none;
+        padding: 7px 13px;
+        border-radius: 3px;
+        text-transform: uppercase;
+        font-family: $fuente-principal;
+    }
+    li a.active, li a:hover{
+        background: gray;
+        transition: .5s;
+    }
+    .checkbtn{
+        font-size: 30px;
+        color: white;
+        float: right;
+        padding-top: 30px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+    #check{
+        display: none;
+    }
+}
+@media (max-width: 952px){
+    nav{
+        .enlace{
+            padding-left: 200px;
+        }
+        .links li{
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 858px){
+    nav{
+        .checkbtn{
+            display: block;
+        }
+        .links{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: rgb(5, 5, 5, 0.9);
+            top: 80px;
+            left: -100%;
+            text-align: center;
+            transition: all .5s;
+        }
+        .links li{
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+        }
+        .links li a {
+            font-size: 20px;
+        }
+        li a:hover, li a.active{
+            background: none;
+            color: gray;
+        }
+        #check:checked ~ ul{
+            left: 0;
+        }
+    }
+}
+*/
+/* INTENTO 2 
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: $fuente-principal;
+    header{
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(5, 5, 5, 0.9);
+        nav{
+            height: 100px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .logo{
+                width: 140px;
+                margin-left: 20px;
+            }
+            .bar-btn{
+                font-size: 30px;
+                color: white;
+                margin-right: 20px;
+                cursor: pointer;
+            }
+            .nav-menu{
+                position: fixed;
+                width: 100%;
+                height: 0vh;
+                top: 100px;
+                background: rgba($color: #000000, $alpha: .95);
+                text-align: center;
+                transition: all .5s;
+            }
+            .nav-menu li{
+                display: none;
+                line-height: 30px;
+                margin: 50px 0;
+                transition: all .5s;
+            }
+            .nav-menu li a{
+                color: white;
+                font-size: 16px;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+            .nav-menu li a.active, .nav-menu li a:hover{
+                color: rgb(87, 86, 86);
+                transition: .3s;
+            }
+            #check{
+                display: none;
+            }
+            #check:checked ~ .nav-menu{
+                height: 100vh;
+            }
+            #check:checked ~ .nav-menu li{
+                display: block;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    .logo{
+        margin-left: 50px;
+    }
+    nav{
+        height: 100px;
+    }
+    .bar-btn{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .nav-menu{
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 50px;
+    }
+    .nav-menu li {
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 20px;
+        transition: none;
+    }
+    .nav-menu li a {
+        font-size: 12px;
+    }
+}
+ */
+/* INTENTO HEADER CON FONDO BORROSO
+header{
+    background-color: rgb(5, 5, 5, 0.9);
+    .head{
+        display: flex;
+        align-items: center;
+        .icon{
+            color: white;
+        }
+        img{
+            margin: 10px;
+            height:100px;
+            width: 100px;
+        }
+        .logos-head{
+            margin: 20px;
+            .logo{
+                padding: 5px;
+                font-family: $fuente-principal;
+                text-decoration: none;
+                color: white;
+                font-size: 1.2rem;
+                border: 1px solid transparent;
+                border-radius: 3px;
+                &:hover{
+                    border: 1px solid white;
+                    transition: .5s;
+                }
+            }
+        }
+    }
+}
+*/
+/*
+header{
+    nav{
+        div{
+            .titulo{
+                font-family: $fuente-carta;
+                font-size: xx-large;
+            }
+            .links{
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}
+.links{
+    display: flex;
+    justify-content: center;
+}
+header img{
+    width: 100%;
+}
+*/
+/* main de galeria:*/
+main section div div .card {
+  margin: 20px;
+  border-radius: 6px;
+  background-color: black;
+}
+main section div div .card .imagen {
+  height: 300px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 10px;
+}
+main section div div .card .imagen:hover {
+  transform: scale(1.2);
+}
+
+.fondocb {
+  background: url(../img/fondo.png);
+}
+
+main .espaciado {
+  padding: 40px;
+}
+main .espaciado .carousel-inner {
+  height: 100vh;
+  width: 100%;
+}
+main .espaciado .carousel-inner div .img-carousel {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .espaciado .carousel-inner div div {
+  color: rgb(253, 252, 252);
+  font-family: "Roboto Slab", serif;
+}
+main .espaciado .carousel-inner div div p {
+  color: rgb(0, 0, 0);
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 540px) {
+  main .espaciado {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 540px) {
+  p {
+    font-size: 15px;
+  }
+}
+main section .titulo-ubicacion {
+  font-family: "Roboto Slab", serif;
+  color: rgb(161, 161, 161);
+  text-align: center;
+  margin: 30px;
+}
+main section .p-bottom {
+  padding-bottom: 30px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  font-family: "Nunito", sans-serif;
+  font-weight: bolder;
+}
+main p {
+  font-family: "Roboto Slab", serif;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+main .container-boton {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .container-boton .boton {
+  display: flex;
+  flex-direction: column;
+}
+main .container-boton .boton .btn {
+  text-decoration: none;
+  padding: 20px 50px;
+  font-size: 1.5rem;
+  position: relative;
+  margin: 5px;
+}
+main .container-boton .boton .btn-3 {
+  color: white;
+  border-radius: 40px;
+  box-shadow: 0 0 0 0 rgba(88, 88, 88, 0.5), 0 0 0 0 rgba(255, 255, 255, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+main .container-boton .boton .btn-3::after {
+  content: "";
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: -50px;
+  left: -100px;
+  background: #13ff13;
+  background-image: linear-gradient(to bottom, #000000, #222222, #3e3e3e, #5c5c5c, #7c7c7c, #929292, #a8a8a8, #bfbfbf, #cfcfcf, #dfdfdf, #efefef, #ffffff);
+  z-index: -1;
+  transition: transform 0.5s ease;
+}
+main .container-boton .boton .btn-3:hover {
+  transform: translate(0, -6px);
+  box-shadow: 10px -10px 25px 0 rgba(49, 49, 49, 0.5), -10px 10px 25px 0 rgba(216, 216, 216, 0.794);
+}
+main .container-boton .boton .btn-3:hover::after {
+  transform: rotate(150deg);
+}
+
+/* INTENTO BOTON
+main{
+    .re-botones{
+        min-width: 100vh;
+        display: $flex;
+        justify-content: center;
+        align-items: center;
+        .boto{
+            display: $flex;
+            flex-direction: column;
+            &:hover::after{
+                transform: rotate(150deg);
+            }
+            .boton-1{
+                text-decoration: none;
+                padding: 20px 50px;
+                font-size: 1.5rem;
+                position: relative;
+                margin: 32px;
+                color: white;
+                border-radius: 40px;
+                box-shadow: 0px 0px 0px 0px rgba($color: 145,64,248, $alpha: 0.5), 0px 0px 0px 0px rgba($color: 39,200,255, $alpha: 0.5);
+                transition: transform 0.3s ease; box-shadow: 0.3 ease;
+                overflow: hidden;
+                &::after{
+                    content:"";
+                    width: 400px;
+                    height: 400px;
+                    position: absolute;
+                    top: -50px;
+                    left: -100px;
+                    background: rgb(106, 190, 57);
+                    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+                    z-index: -1;
+                    transition: transform 0.5s ease;
+                }
+                &:hover{
+                    transform: translate(0, -6px);
+                    box-shadow: 10px -10px 25px 0 rgba($color: 16,226,253, $alpha: 0.5), -10px 10px 25px 0 rgba($color: 183,0,255, $alpha: 0.7);
+                }
+            }
+        }
+    }
+}
+*//*# sourceMappingURL=estilos.css.map */

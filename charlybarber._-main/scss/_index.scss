@@ -1,0 +1,66 @@
+/*main de index:*/
+main{
+    section{
+        div{
+            .titulo-inicio{
+                font-family: $fuente-principal;
+                color: rgb(161, 161, 161);
+                text-align: center;
+                margin: 10px;
+            }
+        }
+    }
+}
+main{
+    .foto-precio{
+        margin: 0 auto;
+        display: $flex;
+        justify-content: center;
+        align-items: center;
+        figure{
+            position: relative;
+            height: 250px;
+            width: 350px;
+            overflow: hidden;
+            border-radius: 6px;
+            box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+                &:hover > .precio {
+                    opacity: 1;
+                    visibility: visible;
+                }
+                &:hover > .img-servicios {
+                    transform: scale(1.3);
+                }
+                &:hover > .precio p {
+                    margin-top: 70px;
+                    margin-bottom: 15px;
+                }
+            .img-servicios{
+                width: 100%;
+                height: 100%;
+                transition: all 500ms ease-out;
+                object-fit: cover;
+            }
+            .precio{
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(119, 119, 119, 0.6);
+                transition: all 500ms ease-out;
+                opacity: 0;
+                visibility: hidden;
+                text-align: center;
+                .pcorte{
+                    font-family: $fuente-principal;
+                    color: rgb(255, 255, 255);
+                }
+            }
+
+        }
+    }
+}
+.fondocb{
+    background: url(../img/fondo\ negro.png);
+}

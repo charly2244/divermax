@@ -1,0 +1,28 @@
+
+/* main de galeria:*/
+main{
+    section{
+        div{
+            div{
+                .card{
+                    margin: 20px;
+                    border-radius: 6px;
+                    background-color: black;
+                    .imagen{
+                        height: 300px;
+                        width: 100%;
+                        object-fit: cover;
+                        border: 3px solid rgb(0, 0, 0);
+                        border-radius: 10px;
+                            &:hover{
+                                transform: scale(1.2);
+                            }
+                    }
+                }
+            }
+        }
+    }
+}
+.fondocb{
+    background: url(../img/fondo.png);
+}
